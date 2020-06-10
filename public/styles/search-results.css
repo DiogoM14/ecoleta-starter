@@ -1,0 +1,208 @@
+body {
+  background-color: white;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  background-color: #f0f0f5;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 16rem;
+  z-index: -1;
+}
+
+#page-search-results {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#page-search-results header {
+  margin-top: 48px;
+  margin-top: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+#page-search-results header a {
+  color: var(--title-color);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+#page-search-results header a span {
+  margin-right: 16px;
+  background-image: url('../assets/arrow-left.svg');
+  display: flex;
+  width: 20px;
+  height: 24px;
+}
+
+form {
+  background-color: white;
+  margin: 80px auto;
+  margin-top: 80px;
+  padding: 64px;
+  border-radius: 8px;
+  max-width: 730px;
+}
+
+form h1 {
+  font-size: 36px;
+}
+
+form fieldset {
+  margin-top: 64px;
+  border: 0;
+}
+
+form legend {
+  margin-bottom: 40px;
+}
+
+form legend h2 {
+  font-size: 24px;
+}
+
+form .field {
+  flex: 1; /*Ocupa todo o espaço vazio*/
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+form .field-group {
+  display: flex;
+}
+
+form input,
+form select {
+  background-color: #f0f0f5;
+  border: 0;
+  padding: 16px 24px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 8px;
+}
+
+form select {
+  -webkit-appearance: none; /*Tira setinha de selecionar nos select's*/
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+form .field-group .field + .field { /*Dentro de um fiel group, vai escolhar o unico que tem 2 fields seguidos*/
+  margin-left: 24px;
+}
+
+form button {
+  width: 260px;
+  height: 56px;
+  background-color: var(--primaty-color);
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  margin-top: 40px;
+  transition: background-color .4s;
+}
+
+form button:hover {
+  background-color: #2fb86e;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.items-grid li {
+  background-color: #f5f5f5;
+  list-style: none;
+  border: 2px solid #f5f5f5;
+  border-radius: 8px;
+  height: 180px;
+  padding: 32px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  cursor: pointer;
+}
+
+.items-grid li span {
+  margin-top: 12px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--title-color);
+}
+
+.items-grid li.selected { /*Unica class li dentro de um selected*/
+  background-color: #e1faec;
+  border: 2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span {
+  pointer-events: none;
+}
+
+main {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+main h4 {
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+
+  margin-bottom: 32px;
+}
+
+main .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+main img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+main .car h1 {
+  margin-top: 32px;
+  font-size: 36px;
+  line-height: 41px;
+  color: #322153;
+}
+
+main .card h3 {
+  margin: 24px 0;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--primaty-color);
+}
+
+main .card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6c6c80;
+}
