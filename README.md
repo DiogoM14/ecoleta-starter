@@ -26,7 +26,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [CSS](https://developer.mozilla.org/pt-PT/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-PT/docs/Web/JavaScript)
 - [NodeJS](https://nodejs.org/en/)
-- [NodeJS](https://mozilla.github.io/nunjucks/)
+- [Nunjucks](https://mozilla.github.io/nunjucks/)
 
 ---
 
